@@ -54,7 +54,7 @@ Values without a decimal point are left without decimals.
 
 125.24 > 125,24
 
-## UM Forms Designer implementation
+## UM Forms Designer Implementation
 
 Create the Form Fields as "Text Box" and enter your meta_key names and title/label etc.
 
