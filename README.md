@@ -8,7 +8,7 @@ Valid decimal digits are only allowed.
 
 Max one decimal point allowed.
 
-Blanks are not allowed between digits.
+Blanks or non-digit characters are not allowed among digits.
 ## Formatting rules
 When validation rules are finished and accepted additional formatting is added to the user input.
 
