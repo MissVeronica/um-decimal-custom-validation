@@ -20,9 +20,9 @@ Values without a decimal point are left without decimals.
 
 ## UM Forms Designer implementation
 
-Create the form field as "Text Box" and enter your meta_key name and title/label etc.
+Create the Form Fields as "Text Box" and enter your meta_key names and title/label etc.
 
-Set "Validate" to "Custom Validation"
+Set "Validate" to "Custom Validation" for each Form Field
 
 Set "Custom Action" to "decimal_balance"
 
