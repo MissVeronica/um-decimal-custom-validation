@@ -18,6 +18,25 @@ Decimal point values are truncated to two digits after decimal point or padded w
 
 Values without a decimal point are left without decimals.
 
+### Test cases formatting
+125 > 125
+
+000125 > 125
+
+125,2 > 125,20
+
+125, > 125,00
+
+000125,2 > 125,20
+
+125,24 > 125,24
+
+123456,25689742 > 123456,25
+
+123456,25333 > 123456,25
+
+125.24 > 125,24
+
 ## UM Forms Designer implementation
 
 Create the Form Fields as "Text Box" and enter your meta_key names and title/label etc.
