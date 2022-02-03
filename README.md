@@ -46,6 +46,8 @@ Values without a decimal point are left without decimals.
 
 ,2 > 0,20
 
+0 > 0,00
+
 125,24 > 125,24
 
 123456,25689742 > 123456,25
