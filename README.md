@@ -29,6 +29,10 @@ Values without a decimal point are left without decimals.
 
 000125,2 > 125,20
 
+0,2 > 0,20
+
+,2 > 0,20
+
 125,24 > 125,24
 
 123456,25689742 > 123456,25
