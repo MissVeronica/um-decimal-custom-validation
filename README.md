@@ -18,7 +18,7 @@ Decimal point values are truncated to two digits after decimal point or padded w
 
 Values without a decimal point are left without decimals.
 
-### Test cases formatting
+### Test cases Formatting Rules
 125 > 125
 
 000125 > 125
