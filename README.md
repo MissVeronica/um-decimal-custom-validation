@@ -28,7 +28,7 @@ Leading zero removal.
 
 Decimal point values are truncated to two digits after decimal point or padded with zero.
 
-Values without a decimal point are left without decimals.
+Values without a decimal point are left without decimals except 0 which is saved as 0,00.
 
 
 ### Test Cases Formatting Rules
