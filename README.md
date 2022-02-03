@@ -9,14 +9,6 @@ Valid decimal digits are only allowed.
 Max one decimal point allowed.
 
 Blanks or non-digit characters are not allowed among digits.
-## Formatting Rules
-When validation rules are finished and accepted additional formatting is added to the user input.
-
-Leading zero removal.
-
-Decimal point values are truncated to two digits after decimal point or padded with zero.
-
-Values without a decimal point are left without decimals.
 ### Test Cases Validation Rules
 $1000 > Please enter a valid Decimal Balance number with digits.
 
@@ -29,6 +21,14 @@ $1000 > Please enter a valid Decimal Balance number with digits.
 1.000.000,00 > Please enter a valid Decimal Balance number with none or one decimal point.
 
 1000, 00 > Please enter a valid Decimal Balance number with digits.
+## Formatting Rules
+When validation rules are finished and accepted additional formatting is added to the user input.
+
+Leading zero removal.
+
+Decimal point values are truncated to two digits after decimal point or padded with zero.
+
+Values without a decimal point are left without decimals.
 
 
 ### Test Cases Formatting Rules
