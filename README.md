@@ -10,17 +10,17 @@ Max one decimal point allowed.
 
 Blanks or non-digit characters are not allowed among digits.
 ### Test Cases Validation Rules
-$1000 > Please enter a valid Decimal Balance number with digits.
+$1000 => Please enter a valid Decimal Balance number with digits.
 
-1000$ > Please enter a valid Decimal Balance number with digits.
+1000$ => Please enter a valid Decimal Balance number with digits.
 
-1000SEK > Please enter a valid Decimal Balance number with digits.
+1000SEK => Please enter a valid Decimal Balance number with digits.
 
-1 000,00 > Please enter a valid Decimal Balance number with digits.
+1 000,00 => Please enter a valid Decimal Balance number with digits.
 
-1.000.000,00 > Please enter a valid Decimal Balance number with none or one decimal point.
+1.000.000,00 => Please enter a valid Decimal Balance number with none or one decimal point.
 
-1000, 00 > Please enter a valid Decimal Balance number with digits.
+1000, 00 => Please enter a valid Decimal Balance number with digits.
 ## Formatting Rules
 When validation rules are finished and accepted additional formatting is added to the user input.
 
@@ -32,29 +32,29 @@ Values without a decimal point are left without decimals.
 
 
 ### Test Cases Formatting Rules
-125 > 125
+125 => 125
 
-000125 > 125
+000125 => 125
 
-125,2 > 125,20
+125,2 => 125,20
 
-125, > 125,00
+125, => 125,00
 
-000125,2 > 125,20
+000125,2 => 125,20
 
-0,2 > 0,20
+0,2 => 0,20
 
-,2 > 0,20
+,2 => 0,20
 
-0 > 0,00
+0 => 0,00
 
-125,24 > 125,24
+125,24 => 125,24
 
-123456,25689742 > 123456,25
+123456,25689742 => 123456,25
 
-123456,25333 > 123456,25
+123456,25333 => 123456,25
 
-125.24 > 125,24
+125.24 => 125,24
 
 ## UM Forms Designer Implementation
 
