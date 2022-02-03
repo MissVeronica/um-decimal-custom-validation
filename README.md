@@ -1,2 +1,35 @@
-# UM-Decimal-Custom-Validation
+# UM Decimal Custom Validation
 Custom Validation of Decimal values
+
+## Validation rules
+Dot replaced by comma without user error message.
+
+Valid decimal digits are only allowed.
+
+Max one decimal point allowed.
+
+Blanks are not allowed between digits.
+## Formatting rules
+When validation rules are finished and accepted additional formatting is added to the user input.
+
+Leading zero removal.
+
+Decimal point values are truncated to two digits after decimal point or padded with zero.
+
+Values without a decimal point are left without decimals.
+
+## UM Forms Designer implementation
+
+Create the form field as "Text Box" and enter your meta_key name and title/label etc.
+
+Set "Validate" to "Custom Validation"
+
+Set "Custom Action" to "decimal_balance"
+
+## Installation
+Add the code snippet source.php to your child-theme's functions.php file or add to the “Code Snippets” plugin
+
+## References
+https://docs.ultimatemember.com/article/94-apply-custom-validation-to-a-field
+
+https://wordpress.org/plugins/code-snippets/
