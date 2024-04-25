@@ -1,73 +1,49 @@
 # UM Decimal Custom Validation
-Custom Validation of Decimal values
-
-## Validation Rules
-Dot replaced by comma without user error message.
-
-Valid decimal digits are only allowed.
-
-Max one decimal point allowed.
-
-Blanks or non-digit characters are not allowed among digits.
-### Test Cases Validation Rules
-$1000 => Please enter a valid Decimal Balance number with digits.
-
-1000$ => Please enter a valid Decimal Balance number with digits.
-
-1000SEK => Please enter a valid Decimal Balance number with digits.
-
-1 000,00 => Please enter a valid Decimal Balance number with digits.
-
-1.000.000,00 => Please enter a valid Decimal Balance number with none or one decimal point.
-
-1000, 00 => Please enter a valid Decimal Balance number with digits.
-## Formatting Rules
-When validation rules are finished and accepted additional formatting is added to the user input.
-
-Leading zero removal.
-
-Decimal point values are truncated to two digits after decimal point or padded with zero.
-
-Values without a decimal point are left without decimals except 0 which is saved as 0,00.
-
-
-### Test Cases Formatting Rules
-125 => 125
-
-000125 => 125
-
-125,2 => 125,20
-
-125, => 125,00
-
-000125,2 => 125,20
-
-0,2 => 0,20
-
-,2 => 0,20
-
-0 => 0,00
-
-125,24 => 125,24
-
-123456,25689742 => 123456,25
-
-123456,25333 => 123456,25
-
-125.24 => 125,24
+Extension to Ultimate Member for Custom Validation of Decimal values
 
 ## UM Forms Designer Implementation
+1. Create the Form Fields as "Text Box" and enter your meta_key names and title/label etc.
+2. Set "Validate" to "Custom Validation" for each Form Field
+3. Set "Custom Action" to "decimal_balance"
 
-Create the Form Fields as "Text Box" and enter your meta_key names and title/label etc.
+## Validation Rules
+1. Dot replaced by comma without user error message.
+2. Valid decimal digits are only allowed.
+3. Max one decimal point allowed.
+4. Blanks or non-digit characters are not allowed among digits.
 
-Set "Validate" to "Custom Validation" for each Form Field
+### Test Cases Validation Rules
+1. $1000 => Please enter a valid Decimal Balance number with digits.
+2. 1000$ => Please enter a valid Decimal Balance number with digits.
+3. 1000SEK => Please enter a valid Decimal Balance number with digits.
+4. 1 000,00 => Please enter a valid Decimal Balance number with digits.
+5. 1.000.000,00 => Please enter a valid Decimal Balance number with none or one decimal point.
+6. 1000, 00 => Please enter a valid Decimal Balance number with digits.
 
-Set "Custom Action" to "decimal_balance"
+## Formatting Rules
+1. When validation rules are finished and accepted additional formatting is added to the user input.
+2. Leading zero removal.
+3. Decimal point values are truncated to two digits after decimal point or padded with zero.
+4. Values without a decimal point are left without decimals except 0 which is saved as 0,00.
 
-## Installation
-Add the code snippet source.php to your child-theme's functions.php file or add to the “Code Snippets” plugin
+### Test Cases Formatting Rules
+1. 125 => 125
+2. 000125 => 125
+3. 125,2 => 125,20
+4. 125, => 125,00
+5. 000125,2 => 125,20
+6. 0,2 => 0,20
+7. ,2 => 0,20
+8. 0 => 0,00
+9. 125,24 => 125,24
+10. 123456,25689742 => 123456,25
+11. 123456,25333 => 123456,25
+12. 125.24 => 125,24
 
 ## References
 https://docs.ultimatemember.com/article/94-apply-custom-validation-to-a-field
 
-https://wordpress.org/plugins/code-snippets/
+## Installation
+1. Install by downloading the plugin ZIP file and install as a new Plugin, which you upload in WordPress -> Plugins -> Add New -> Upload Plugin.
+2. Activate the Plugin
+
