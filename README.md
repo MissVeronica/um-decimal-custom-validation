@@ -1,5 +1,5 @@
 # UM Decimal Custom Validation
-Extension to Ultimate Member for Custom Validation of Decimal values
+Extension to Ultimate Member for Custom Validation of Decimal values in UM text boxes
 
 ## UM Forms Designer Implementation
 1. Create the Form Fields as "Text Box" and enter your meta_key names and title/label etc.
